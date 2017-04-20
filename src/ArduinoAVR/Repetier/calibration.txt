@@ -1,0 +1,373 @@
+; Set z-probe z offset
+; (3mm is about right when using the clip on sensor mount)
+M206 T3 P808 X4.55
+
+; auto level (3 point
+G32
+
+
+
+; New calibration values:
+M206 T1 P893 S-115
+M206 T1 P895 S36
+M206 T1 P897 S-69
+M206 T3 P881 X218
+M206 T3 P885 X98.19
+M206 T3 P153 X324
+M206 T3 P901 X211.61
+M206 T3 P905 X330.6
+M206 T3 P909 X90.000
+
+; 1st go
+-0.42
+0.33
+0.43
+0
+-1
+-0.9
+0
+
+; 2nd go
+-0.15
+-0.04
+-0.16
+-0.42
+-0.25
+0.48
+0
+
+; 3rd go
+-0.01
+0.18
+0.01
+-0.1
+-0.45
+0.02
+0
+
+; 4th go
+-0.15
+-0.06
+-0.13
+0.03
+-0.1
+0.2
+0
+
+; 5th go
+-0.17
+-0.07
+-0.07
+0.33
+-0.07
+-0.03
+0
+
+; 6th go
+M206 T1 P893 S-115
+M206 T1 P895 S36
+M206 T1 P897 S-69
+M206 T3 P881 X218
+M206 T3 P885 X98.19
+M206 T3 P153 X324
+M206 T3 P901 X211.61
+M206 T3 P905 X330.6
+M206 T3 P909 X90.000
+
+; 6th go results (0.09 deviation)
+-0.08
+0.01
+-0.09
+0.18
+-0.08
+0.08
+0
+
+; 7th go
+M206 T1 P893 S-116
+M206 T1 P895 S36
+M206 T1 P897 S-62
+M206 T3 P881 X218
+M206 T3 P885 X98.14
+M206 T3 P153 X324
+M206 T3 P901 X211.85
+M206 T3 P905 X330.45
+M206 T3 P909 X90.000
+
+; 7th go results (0.16 deviation)
+-0.19
+-0.1
+-0.09
+0.34
+-0.1
+-0.04
+0
+
+; 8th go
+M206 T1 P893 S-116
+M206 T1 P895 S34
+M206 T1 P897 S-69
+M206 T3 P881 X218
+M206 T3 P885 X98.22
+M206 T3 P153 X324
+M206 T3 P901 X211.55
+M206 T3 P905 X330.96
+M206 T3 P909 X90.000
+
+; 8th go results (0.09 deviation)
+-0.04
+0.13
+-0.1
+0.04
+-0.11
+0.11
+0
+
+; 9th go, manually adjusting diag arm length
+M206 T1 P893 S-118
+M206 T1 P895 S34
+M206 T1 P897 S-69
+M206 T3 P881 X217.5
+M206 T3 P885 X98.22
+M206 T3 P153 X324
+M206 T3 P901 X211.55
+M206 T3 P905 X330.96
+M206 T3 P909 X90.000
+
+; 9th go results (0.09 deviation)
+-0.08
+0.07
+-0.12
+0.12
+-0.08
+0.11
+0
+
+; 10th go, manually adjusting diag arm length
+M206 T1 P893 S-116
+M206 T1 P895 S32
+M206 T1 P897 S-67
+M206 T3 P881 X217.5
+M206 T3 P885 X98.20
+M206 T3 P153 X324
+M206 T3 P901 X211.50
+M206 T3 P905 X331.03
+M206 T3 P909 X90.000
+
+; 10th go results (0.09 deviation)
+-0.08
+0.12
+-0.1
+0.05
+-0.12
+0.1
+0
+
+; 11th go, manually adjusting diag arm length
+M206 T1 P893 S-118
+M206 T1 P895 S32
+M206 T1 P897 S-66
+M206 T3 P881 X217.5
+M206 T3 P885 X98.21
+M206 T3 P153 X324
+M206 T3 P901 X211.54
+M206 T3 P905 X330.98
+M206 T3 P909 X90.000
+
+; 11th go results (0.08 deviation)
+-0.11
+0.09
+-0.1
+0.07
+-0.06
+0.09
+0
+
+; 12th go, manually adjusting diag arm length
+M206 T1 P893 S-115
+M206 T1 P895 S31
+M206 T1 P897 S-69
+M206 T3 P881 X217.5
+M206 T3 P885 X98.21
+M206 T3 P153 X324
+M206 T3 P901 X211.54
+M206 T3 P905 X330.87
+M206 T3 P909 X90.000
+
+; 12th go results (0.07 deviation)
+-0.08
+0.09
+-0.08
+0.07
+-0.08
+0.07
+0
+
+; 13th go, manually adjusting diag arm length
+M206 T1 P893 S-115
+M206 T1 P895 S31
+M206 T1 P897 S-69
+M206 T3 P881 X217.5
+M206 T3 P885 X98.21
+M206 T3 P153 X324
+M206 T3 P901 X211.52
+M206 T3 P905 X330.82
+M206 T3 P909 X90.000
+
+; 13th go results (0.08 deviation)
+-0.08
+0.07
+-0.09
+0.08
+-0.08
+0.09
+0
+
+
+
+
+
+
+
+
+
+
+
+; Initial calibration values:
+M206 T3 P808 X3
+
+M206 T1 P893 S0
+M206 T1 P895 S0
+M206 T1 P897 S0
+M206 T3 P881 X218
+M206 T3 P885 X97.20
+M206 T3 P153 X323.416
+M206 T3 P901 X210.000
+M206 T3 P905 X330.000
+M206 T3 P909 X90.000
+
+
+
+
+
+
+
+
+
+
+; Check script (subtract 11.33 from each, then * -1)
+G28
+G1 Z10
+
+G1 X0 Y75
+G30
+G1 X64.95 Y37.5
+G30
+G1 X64.95 Y-37.5
+G30
+G1 X0 Y-75
+G30
+G1 X-64.95 Y-37.5
+G30
+G1 X-64.95 Y37.5
+G30
+G1 X0 Y0
+G30
+G30
+
+
+
+
+
+; Show eeprom values
+M205
+
+; Current values
+
+EPR:0 1028 0 Language
+EPR:2 75 250000 Baudrate
+EPR:3 129 0.150 Filament printed [m]
+EPR:2 125 216 Printer active [s]
+EPR:2 79 360000 Max. inactive time [ms,0=off]
+EPR:2 83 360000 Stop stepper after inactivity [ms,0=off]
+EPR:3 11 80.0000 Steps per mm
+EPR:3 23 200.000 Max. feedrate [mm/s]
+EPR:3 35 40.000 Homing feedrate [mm/s]
+EPR:3 39 20.000 Max. jerk [mm/s]
+EPR:3 133 0.000 X min pos [mm]
+EPR:3 137 0.000 Y min pos [mm]
+EPR:3 141 0.000 Z min pos [mm]
+EPR:3 145 200.000 X max length [mm]
+EPR:3 149 200.000 Y max length [mm]
+EPR:3 153 323.416 Z max length [mm]
+EPR:1 891 70 Segments/s for travel
+EPR:1 889 180 Segments/s for printing
+EPR:3 59 3000.000 Acceleration [mm/s^2]
+EPR:3 71 3000.000 Travel acceleration [mm/s^2]
+EPR:3 881 215.590 Diagonal rod length [mm]
+EPR:3 885 97.200 Horizontal rod radius at 0,0 [mm]
+EPR:3 925 80.000 Max printable radius [mm]
+EPR:1 893 0 Tower X endstop offset [steps]
+EPR:1 895 0 Tower Y endstop offset [steps]
+EPR:1 897 0 Tower Z endstop offset [steps]
+EPR:3 901 210.000 Alpha A(210):
+EPR:3 905 330.000 Alpha B(330):
+EPR:3 909 90.000 Alpha C(90):
+EPR:3 913 0.000 Delta Radius A(0):
+EPR:3 917 0.000 Delta Radius B(0):
+EPR:3 921 0.000 Delta Radius C(0):
+EPR:3 933 0.000 Corr. diagonal A [mm]
+EPR:3 937 0.000 Corr. diagonal B [mm]
+EPR:3 941 0.000 Corr. diagonal C [mm]
+EPR:3 1024 -2.500 Coating thickness [mm]
+EPR:3 808 3.000 Z-probe height [mm]
+EPR:3 929 10.000 Max. z-probe - bed dist. [mm]
+EPR:3 812 5.000 Z-probe speed [mm/s]
+EPR:3 840 150.000 Z-probe x-y-speed [mm/s]
+EPR:3 800 0.000 Z-probe offset x [mm]
+EPR:3 804 11.000 Z-probe offset y [mm]
+EPR:3 816 0.000 Z-probe X1 [mm]
+EPR:3 820 68.000 Z-probe Y1 [mm]
+EPR:3 824 58.800 Z-probe X2 [mm]
+EPR:3 828 -33.920 Z-probe Y2 [mm]
+EPR:3 832 -58.800 Z-probe X3 [mm]
+EPR:3 836 -33.920 Z-probe Y3 [mm]
+EPR:3 1036 0.000 Z-probe bending correction A [mm]
+EPR:3 1040 0.000 Z-probe bending correction B [mm]
+EPR:3 1044 0.000 Z-probe bending correction C [mm]
+EPR:0 880 0 Autolevel active (1/0)
+EPR:3 976 0.000 tanXY Axis Compensation
+EPR:3 980 0.000 tanYZ Axis Compensation
+EPR:3 984 0.000 tanXZ Axis Compensation
+EPR:0 106 1 Bed Heat Manager [0-3]
+EPR:0 107 255 Bed PID drive max
+EPR:0 124 80 Bed PID drive min
+EPR:3 108 196.000 Bed PID P-gain
+EPR:3 112 33.000 Bed PID I-gain
+EPR:3 116 290.000 Bed PID D-gain
+EPR:0 120 255 Bed PID max value [0-255]
+EPR:0 1020 0 Enable retraction conversion [0/1]
+EPR:3 992 3.000 Retraction length [mm]
+EPR:3 1000 40.000 Retraction speed [mm/s]
+EPR:3 1004 0.000 Retraction z-lift [mm]
+EPR:3 1008 0.000 Extra extrusion on undo retract [mm]
+EPR:3 1016 20.000 Retraction undo speed
+EPR:3 200 95.000 Extr.1 steps per mm
+EPR:3 204 250.000 Extr.1 max. feedrate [mm/s]
+EPR:3 208 20.000 Extr.1 start feedrate [mm/s]
+EPR:3 212 5000.000 Extr.1 acceleration [mm/s^2]
+EPR:0 216 1 Extr.1 heat manager [0-3]
+EPR:0 217 240 Extr.1 PID drive max
+EPR:0 245 40 Extr.1 PID drive min
+EPR:3 218 18.0400 Extr.1 PID P-gain/dead-time
+EPR:3 222 2.4400 Extr.1 PID I-gain
+EPR:3 226 33.3600 Extr.1 PID D-gain
+EPR:0 230 255 Extr.1 PID max value [0-255]
+EPR:2 231 0 Extr.1 X-offset [steps]
+EPR:2 235 0 Extr.1 Y-offset [steps]
+EPR:2 290 0 Extr.1 Z-offset [steps]
+EPR:1 239 1 Extr.1 temp. stabilize time [s]
+EPR:1 250 150 Extr.1 temp. for retraction when heating [C]
+EPR:1 252 0 Extr.1 distance to retract when heating [mm]
+EPR:0 254 255 Extr.1 extruder cooler speed [0-255]
+
